@@ -1,0 +1,89 @@
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  /* Custom Select*/
+  .customselect select
+  {
+    width: 350px;
+    height: 30px;
+    background: none;
+    border: solid black;
+    
+    padding: 0 50px 0 20px;
+    background-color: #ddd;
+
+  }
+  .customselect .select
+  {
+    position: relative;
+    background: #f1f1f1;
+    border: 1px solid black;
+    height: 30px;
+    width: 350px;
+    margin-left: 650px;
+  
+
+  }
+  .customselect .select::before
+  {
+    content: '';
+    background:black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+  
+  }
+  .customselect .select::after
+  {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7px 0;
+    border-color: #f1f1f1 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50);
+
+  }
